@@ -1,0 +1,6 @@
+C:\Users\aiden\source\repos\VRCLogging\VRCLogging\bin\Debug\VRCLogging.pdb
+C:\Users\aiden\source\repos\VRCLogging\VRCLogging\obj\Debug\VRCLogging.csprojAssemblyReference.cache
+C:\Users\aiden\source\repos\VRCLogging\VRCLogging\obj\Debug\VRCLogging.pdb
+C:\Users\aiden\source\repos\VRCLogging\VRCLogging\bin\Debug\VRCLogging.dll.config
+C:\Users\aiden\source\repos\VRCLogging\VRCLogging\bin\Debug\VRCLogging.dll
+C:\Users\aiden\source\repos\VRCLogging\VRCLogging\obj\Debug\VRCLogging.dll
