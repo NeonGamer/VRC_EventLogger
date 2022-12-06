@@ -13,7 +13,7 @@ namespace VRCLogging
     public class VRCEventLogger
     {
         public event Action<string> OnPlayerJoin, OnPlayerLeft;
-        public event Action OnFoundSDK2Avatar, OnFoundSDK3Avatar, OnCheckForVRCPlus, OnPortalDropped;
+        public event Action OnFoundSDK2Avatar, OnFoundSDK3Avatar, OnCheckForVRCPlus, OnPortalDropped, OnRoomExit, OnRoomEnter;
         public event Action<string, bool, string> OnGetVRCPlusDetails;
 
         private string outputLogRoot = @"/LocalLow/VRChat/VRChat";
@@ -87,7 +87,8 @@ namespace VRCLogging
                         var desc = line.Substring(descStart);
                         OnGetVRCPlusDetails?.Invoke(id, active, desc);
                     }
-                    else if (line.Contains("Portals/PortalInternalDynamic")) OnPortalDropped?.Invoke();
+                    else if (line.Contains("[Behaviour] Beginning room transition")) OnRoomExit?.Invoke();
+                    else if (line.Contains("[Behaviour] Finished entering world")) OnRoomEnter?.Invoke();
                 }
             }
 
